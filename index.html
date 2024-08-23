@@ -4,13 +4,87 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mensaje Especial</title>
+    <style>
+        body {
+            background-color: #fff0f5; /* Color de fondo suave (Lavender Blush) */
+            font-family: 'Cursive', sans-serif; /* Fuente cursiva */
+            color: #ff69b4; /* Color de texto (Hot Pink) */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+            position: relative;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin: 0;
+            padding: 20px;
+            background-color: #ffe4e1; /* Fondo suave (Misty Rose) */
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(255, 182, 193, 0.6); /* Sombra suave */
+            transition: transform 0.2s;
+        }
+
+        h1:hover {
+            transform: scale(1.05); /* Pequeño efecto de zoom al pasar el mouse */
+        }
+
+        body::before,
+        body::after {
+            content: '💖';
+            font-size: 10rem;
+            position: absolute;
+            opacity: 0.2;
+            transform: rotate(-20deg);
+        }
+
+        body::before {
+            top: 10%;
+            left: 5%;
+        }
+
+        body::after {
+            content: '💖';
+            bottom: 10%;
+            right: 5%;
+            transform: rotate(20deg);
+        }
+
+        /* Estilos para pantallas más pequeñas */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+                padding: 15px;
+            }
+
+            body::before,
+            body::after {
+                font-size: 8rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.5rem;
+                padding: 10px;
+            }
+
+            body::before,
+            body::after {
+                font-size: 6rem;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1> Sorpresa xd</h1>
+    <h1>Te amo mucho mi amor, quiero irme yaaa para verte</h1>
     <script>
-        // Mostrar un mensaje emergente al cargar la página
         window.onload = function() {
-            alert("Te amo mucho mi amor. ¿Cuándo nos casamos?, ya te extraño");
+            alert("¿Cuándo nos casamos?");
         }
     </script>
 </body>

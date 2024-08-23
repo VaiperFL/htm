@@ -1,0 +1,46 @@
+body {
+    background-color: #fff0f5; /* Color de fondo suave (Lavender Blush) */
+    font-family: 'Cursive', sans-serif; /* Fuente cursiva */
+    color: #ff69b4; /* Color de texto (Hot Pink) */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 0;
+    padding: 20px;
+    background-color: #ffe4e1; /* Fondo suave (Misty Rose) */
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(255, 182, 193, 0.6); /* Sombra suave */
+    transition: transform 0.2s;
+}
+
+h1:hover {
+    transform: scale(1.05); /* Pequeño efecto de zoom al pasar el mouse */
+}
+
+body::before {
+    content: '💖';
+    font-size: 10rem;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    opacity: 0.2;
+    transform: rotate(-20deg);
+}
+
+body::after {
+    content: '💖';
+    font-size: 10rem;
+    position: absolute;
+    bottom: 10%;
+    right: 5%;
+    opacity: 0.2;
+    transform: rotate(20deg);
+}
